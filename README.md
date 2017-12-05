@@ -1,4 +1,4 @@
-# Sass::MediaQueryCombiner
+# Sass::MediaQuerySeperator
 
 [![Gem Version](https://badge.fury.io/rb/sass-media_query_combiner.png)](http://badge.fury.io/rb/sass-media_query_combiner)
 [![Build Status](https://travis-ci.org/aaronjensen/sass-media_query_combiner.png)](https://travis-ci.org/aaronjensen/sass-media_query_combiner)
@@ -105,4 +105,3 @@ sass --watch -r sass-media_query_combiner
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aaronjensen/sass-media_query_combiner/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
