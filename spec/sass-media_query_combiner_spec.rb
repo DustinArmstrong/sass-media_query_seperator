@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'sass-media_query_combiner'
+require 'sass-media_query_seperator'
 
-describe "Combiner" do
+describe "Seperator" do
   let(:sass) { <<SASS }
 h3
   color: orange

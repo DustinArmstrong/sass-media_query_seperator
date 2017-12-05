@@ -1,0 +1,15 @@
+$red: red;
+body {
+  background: $red;
+  @media (min-width: 500px) {
+    background: black;
+  }
+  @media (min-width: 800px) {
+    background: purple;
+  }
+}
+p {
+  @media (min-width: 500px) {
+    color: white;
+  }
+}

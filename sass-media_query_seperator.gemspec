@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sass/media_query_combiner/version'
+require 'sass/media_query_seperator/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "sass-media_query_combiner"
-  gem.version       = Sass::MediaQueryCombiner::VERSION
+  gem.name          = "sass-media_query_seperator"
+  gem.version       = Sass::MediaQuerySeperator::VERSION
   gem.authors       = ["Aaron Jensen"]
   gem.email         = ["aaronjensen@gmail.com"]
   gem.description   = %q{Automatically combine media queries}

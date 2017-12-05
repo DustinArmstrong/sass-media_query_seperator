@@ -1,0 +1,13 @@
+{body {
+  background: red; }
+    }
+
+@media (min-width: 500px) {
+    body {
+      background: black; } 
+  p {
+    color: white; } }
+
+@media (min-width: 800px) {
+    body {
+      background: purple; } }
