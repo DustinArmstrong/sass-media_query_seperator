@@ -36,8 +36,8 @@ module Sass
         allQueries.merge!("" => filtered_data)
         allQueries.merge!(queries)
 
-        seperated = allQueries.map { |query, body| "#{query}{#{body}}" }.
-          join(("\n\n" if pretty))
+        seperated = allQueries.map { |query, body| query+body }#.
+          #join(("\n\n" if pretty))
 
         seperated
       end
