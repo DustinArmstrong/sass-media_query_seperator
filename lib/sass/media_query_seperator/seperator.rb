@@ -37,7 +37,7 @@ module Sass
         allQueries.merge!(queries)
 
         seperated = allQueries.map { |query, body|
-          "#{query}#{provided?(query) ? '{' : ''}#{body}#{provided?(query) ? '}' : ''}"
+          "#{query}#{provided?(query) ? '{' : ''}#{body}#{provided?(query) ? '}' : ''}#{source_map_url}"
         }
 
         seperated
