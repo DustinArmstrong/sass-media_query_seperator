@@ -6,7 +6,7 @@ module Sass
         queries = Hash.new { |hash, key| hash[key] = '' }
         pretty = true
 
-        #css, source_map_url = extract_source_map_url(css)
+        css, source_map_url = extract_source_map_url(css)
 
         filtered_data = css.gsub(/
           \n?                 # Optional newline
@@ -36,10 +36,16 @@ module Sass
         allQueries.merge!("" => filtered_data)
         allQueries.merge!(queries)
 
-        seperated = allQueries.map { |query, body| query+body }#.
-          #join(("\n\n" if pretty))
+        seperated = allQueries.map { |query, body|
+          "#{query}#{provided?(query) ? '{' : ''}#{body}#{provided?(query) ? '}' : ''}"
+        }
 
         seperated
+      end
+
+      def self.provided?(query)
+        return false if query.empty? || query.nil?
+        true
       end
 
       def self.extract_source_map_url(css)
